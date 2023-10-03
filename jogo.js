@@ -22,8 +22,32 @@ console.log(posX, posY)
 var Mosquito = document.createElement('img');
 Mosquito.src="img/mosca.png";
 document.body.appendChild(Mosquito);
-Mosquito.className = 'mosq01';
+Mosquito.className = sizeMosquito() + ' ' + ladoAleatorio();
 Mosquito.style.left = posX + 'px';
 Mosquito.style.top = posY + 'px';
 Mosquito.style.position = 'absolute';
+
+//console.log(ladoAleatorio());
+}
+
+function sizeMosquito(){
+    var classe = Math.floor(Math.random() * 3);
+    switch (classe){
+        case 0:
+            return 'mosq01'
+        case 1:
+            return 'mosq02'
+        case 2:
+            return 'mosq03'
+    }
+}
+
+function ladoAleatorio(){
+    var classe = Math.floor(Math.random() * 2);
+    switch (classe){
+        case 0:
+            return 'ladoA'
+        case 1:
+            return 'ladoB'
+    }
 }

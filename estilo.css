@@ -3,3 +3,23 @@
     height: 50px;
     display: flex;
 }
+
+.mosq02{
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+
+.mosq03{
+    width: 90px;
+    height: 90px;
+    display: flex;
+}
+
+.ladoA{
+    transform:scaleX(1)
+}
+
+.ladoB{
+    transform:scaleX(-1)
+}
